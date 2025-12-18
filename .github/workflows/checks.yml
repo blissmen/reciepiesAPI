@@ -1,6 +1,6 @@
 ---
 name:checks
-on: [push]
+on:[push]
 jobs:
     checks:
         name: Checks Lint and requirements
