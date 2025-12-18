@@ -28,7 +28,7 @@ jobs:
           if [ -f requirements.dev.txt ]; then pip install -r requirements.dev.txt; fi
 
       - name: Test
-        run: docker-compose run --rm app sh -c "python manage.py check"
+        run: docker compose run --rm app sh -c "python manage.py test"
 
       - name: Run flake8
         run: flake8 .
